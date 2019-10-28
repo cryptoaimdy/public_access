@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'fsevents' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose config Skipping project config: /home/yk/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData fsevents
+9 silly fetchNamedPackageData fsevents
+10 silly mapToRegistry name fsevents
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+14 verbose request uri https://registry.npmjs.org/fsevents
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 3:29:10 PM
+17 verbose request id 67ea407a42b8a922
+18 verbose etag W/"94b8ac82aeeda1585858ad06e751ee11"
+19 verbose lastModified Mon, 14 Oct 2019 00:14:45 GMT
+20 http request GET https://registry.npmjs.org/fsevents
+21 http 304 https://registry.npmjs.org/fsevents
+22 verbose headers { date: 'Fri, 25 Oct 2019 09:59:11 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'set-cookie':
+22 verbose headers    [ '__cfduid=d09c948c7c17238f71a40544990aaffbf1571997551; expires=Sat, 24-Oct-20 09:59:11 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   'cf-ray': '52b356169f14aa9c-SIN',
+22 verbose headers   age: '4227',
+22 verbose headers   etag: '"94b8ac82aeeda1585858ad06e751ee11"',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   'last-modified': 'Mon, 14 Oct 2019 00:14:45 GMT',
+22 verbose headers   vary: 'accept-encoding, accept',
+22 verbose headers   'x-amz-meta-rev': '165-a2b297b1ae8109719aac351bbb43a9dc',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Fri, 25 Oct 2019 09:59:11 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'set-cookie':
+23 silly get      [ '__cfduid=d09c948c7c17238f71a40544990aaffbf1571997551; expires=Sat, 24-Oct-20 09:59:11 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     'cf-ray': '52b356169f14aa9c-SIN',
+23 silly get     age: '4227',
+23 silly get     etag: '"94b8ac82aeeda1585858ad06e751ee11"',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     'last-modified': 'Mon, 14 Oct 2019 00:14:45 GMT',
+23 silly get     vary: 'accept-encoding, accept',
+23 silly get     'x-amz-meta-rev': '165-a2b297b1ae8109719aac351bbb43a9dc',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/fsevents from cache
+25 verbose get saving fsevents to /home/yk/.npm/registry.npmjs.org/fsevents/.cache.json
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: Unsupported
+43 verbose stack     at checkPlatform (/usr/share/npm/node_modules/npm-install-checks/index.js:46:14)
+43 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+43 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:15:14)
+43 verbose stack     at /usr/share/npm/node_modules/slide/lib/chain.js:18:7
+43 verbose stack     at checkEngine (/usr/share/npm/node_modules/npm-install-checks/index.js:25:10)
+43 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+43 verbose stack     at LOOP (/usr/share/npm/node_modules/slide/lib/chain.js:15:14)
+43 verbose stack     at chain (/usr/share/npm/node_modules/slide/lib/chain.js:20:5)
+43 verbose stack     at module.exports.isInstallable (/usr/share/npm/lib/install/validate-args.js:26:3)
+43 verbose stack     at Array.<anonymous> (/usr/share/npm/node_modules/slide/lib/bind-actor.js:15:8)
+44 verbose pkgid fsevents@2.1.1
+45 verbose cwd /home/yk/flask_chatbot
+46 error Linux 5.0.0-29-generic
+47 error argv "/usr/bin/node" "/usr/bin/npm" "install" "fsevents"
+48 error node v8.10.0
+49 error npm  v3.5.2
+50 error code EBADPLATFORM
+51 error notsup Not compatible with your operating system or architecture: fsevents@2.1.1
+52 error notsup Valid OS:    darwin
+52 error notsup Valid Arch:  any
+52 error notsup Actual OS:   linux
+52 error notsup Actual Arch: x64
+53 verbose exit [ 1, true ]
